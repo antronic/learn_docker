@@ -13,8 +13,8 @@ Try to use docker for better life :D
   # EXPOSE is command to use port 80 by default
   EXPOSE 80
   ```
-  You can find more repositories from [http://hub.docker.com]('https://hub.docker.com/') .  
-  For my example, I use this one [>>php<<]('https://hub.docker.com/_/php/')
+  You can find more repositories from [http://hub.docker.com](https://hub.docker.com/) .  
+  For my example, I use this one [>>php<<](https://hub.docker.com/_/php/)
 
 ## Second Step!
   - We have to use command to do something.

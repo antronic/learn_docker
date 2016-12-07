@@ -19,8 +19,23 @@ Try to use docker for better life :D
 ## Second Step!
   - We have to use command to do something.
   - After we create a Dockerfile, we need to build it by using following command below.
-  ## Simple Command
+
   #### build an image from Dockerfile
   ```bash
-  $ docker build -t hello-docker #<path to DockerFile>
+  $ docker build -t #<image-name> #<path to DockerFile>  
+  # example  
+  $ docker build -t hello-docker .
+  ```
+
+  - Now, an image has been created.
+  - We can run it by using run command.
+
+## Third Step!
+  - Use `run` to run an image.
+
+  #### run an image
+  ```bash
+  $ docker run -p #<local port:docker port> #<image name>  
+  # example  
+  $ docker run -p 8080:80 hello-docker
   ```

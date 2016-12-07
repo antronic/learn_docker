@@ -14,14 +14,14 @@ Try to use docker for better life :D
   EXPOSE 80
   ```
   You can find more repositories from [http://hub.docker.com](https://hub.docker.com/) .  
-  For my example, I use this one [>>php<<](https://hub.docker.com/_/php/)
+  For my example, I use this one [php](https://hub.docker.com/_/php/)
 
 ## Second Step!
   - We have to use command to do something.
   - After we create a Dockerfile, we need to build it by using following command below.
 
   #### build an image from Dockerfile
-  ```bash
+  ```sh
   $ docker build -t #<image-name> #<path to DockerFile>  
   # example  
   $ docker build -t hello-docker .
@@ -34,8 +34,24 @@ Try to use docker for better life :D
   - Use `run` to run an image.
 
   #### run an image
-  ```bash
+  ```sh
   $ docker run -p #<local port:docker port> #<image name>  
   # example  
   $ docker run -p 8080:80 hello-docker
   ```
+  - Now, image is running, and you can try to open it on your browser. [http://localhost:8080](http://localhost:8080)
+
+## Futher more!!!!
+  - **If you try to change any file in local, it would not change in docker too.**
+  - So, docker has a feature to share volume between docker and local as the same volume.
+  - We will specify path for docker to share volume by use ```-v``` parameter.
+
+  ```sh
+  $ docker $ docker run -p 8080:80 -v /Users/jirachai/www/learn/learn_docker/src:/var/www/html/
+  ```
+  ##### Explain code
+  ```
+  -v <Your path to share from local>:<Path on docker to place>
+  ```
+
+# END :D

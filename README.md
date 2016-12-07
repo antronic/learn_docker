@@ -47,11 +47,11 @@ Try to use docker for better life :D
   - We will specify path for docker to share volume by use ```-v``` parameter.
 
   ```sh
-  $ docker $ docker run -p 8080:80 -v /Users/jirachai/www/learn/learn_docker/src:/var/www/html/
+  $ docker $ docker run -p 8080:80 -v /Users/jirachai/www/learn/learn_docker/src:/var/www/html/ hello-docker
   ```
   ##### Explain code
   ```
   -v <Your path to share from local>:<Path on docker to place>
   ```
 
-# END :D
+*** END :D ***

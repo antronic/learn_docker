@@ -1,6 +1,7 @@
 # learn_docker
 Try to use docker for better life :D
 ## First Step!
+- After we installed docker into your computer...
 - We have to create ```Dockerfile``` first!
 - We place ```Dockerfile``` in a same directory with out project, you can see from this repository.
 

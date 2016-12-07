@@ -1,5 +1,8 @@
 # learn_docker
 Try to use docker for better life :D
+### Requirement
+- [Docker](https://www.docker.com/)
+
 ## First Step!
 - After we installed docker into your computer...
 - We have to create ```Dockerfile``` first!
